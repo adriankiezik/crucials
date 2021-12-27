@@ -1,0 +1,22 @@
+main: me.yumei.crucials.Main
+version: 1.0
+name: Crucials
+description: Spigot plugin featuring stuff that every server should have.
+author: Yumei
+api-version: 1.18
+website: https://github.com/adriankiezik/crucials
+commands:
+    fly:
+      description: Enables flying.
+      usage: /fly [player]
+      permission: crucials.fly
+    msg:
+      description: Send private message.
+      usage: /msg [player] [message]
+permissions:
+  crucials.*:
+    description: Wildcard permission
+    default: op
+  crucials.fly:
+    description: Allows fly command
+    default: op

@@ -1,0 +1,18 @@
+#----- Roles -----#
+# Make sure roles are ordered by descending priority.
+# For example admin role should be on top & default user on bottom.
+
+# Default chat format
+chatformat: "%player%: %message%"
+
+# Custom chat format for each role
+roles:
+  admin:
+    permission: "crucials.admin"
+    chatformat: "§c[ADMIN] %player%§f: %message%"
+  mod:
+    permission: "crucials.mod"
+    chatformat: "§b[MOD] %player%§f: %message%"
+  vip:
+    permission: "crucials.vip"
+    chatformat: "§a[VIP] %player%§f: %message%"
