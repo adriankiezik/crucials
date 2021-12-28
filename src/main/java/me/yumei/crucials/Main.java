@@ -1,6 +1,7 @@
 package me.yumei.crucials;
 
 import me.yumei.crucials.commands.CommandMsg;
+import me.yumei.crucials.web.WebServer;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -24,6 +25,12 @@ public class Main extends JavaPlugin {
         this.getCommand("msg").setExecutor(new CommandMsg());
         // Events
         Bukkit.getPluginManager().registerEvents(new EventPlayerChat(), this);
+        // Web server
+        try {
+            WebServer.setupServer();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     private void createRolesConfig() {
         rolesConfigFile = new File(getDataFolder(), "roles.yml");

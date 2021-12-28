@@ -11,7 +11,7 @@ commands:
       usage: /fly [player]
       permission: crucials.fly
     msg:
-      description: Send private message.
+      description: Sends private message.
       usage: /msg [player] [message]
 permissions:
   crucials.*:
