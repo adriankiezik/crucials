@@ -16,4 +16,5 @@ Tested working versions: 1.18, 1.18.1
 ### Edit the code
 Want to add new features to Crucials or fix bugs yourself?
   - make sure to have installed any version of Java greater than or equal to 17,
+  - to build jar file simply run "package" of maven,
   - and don't forget to create a pull request 🎉
